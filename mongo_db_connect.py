@@ -8,7 +8,7 @@ topic = 'crypto_data_kafkatopic'
 
 # Connect to MongoDB and distance_data database
 try:
-    client = MongoClient('mongodb://localhost:27017')
+    client = MongoClient('mongodb+srv://data-engineering:data.engineering@cryptocluster.hyh7kfb.mongodb.net/?retryWrites=true&w=majority')
     db = client.Crypto_db
     collection = db.Crypto_collection
     print("Connected successfully!")
